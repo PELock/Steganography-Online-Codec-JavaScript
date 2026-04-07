@@ -1,0 +1,26 @@
+[package]
+name = "steganography-online-codec"
+version = "1.0.1"
+edition = "2021"
+rust-version = "1.70"
+# reqwest 0.11 + url 2.4.1 avoid ICU/idna 1.x (Rust 1.86+). TLS via rustls (no system OpenSSL).
+description = "Steganography Online Codec allows you to hide a password encrypted message within the images & photos using AES encryption algorithm with a 256-bit PBKDF2 derived key."
+license = "Apache-2.0"
+authors = ["Bartosz Wójcik <support@pelock.com>"]
+homepage = "https://www.pelock.com"
+repository = "https://github.com/PELock/Steganography-Online-Codec-Rust"
+documentation = "https://www.pelock.com/products/steganography-online-codec"
+keywords = ["steganography", "stego", "cryptography", "security", "image"]
+categories = ["api-bindings", "multimedia"]
+
+[dependencies]
+base64 = "0.22"
+# reqwest 0.11 keeps the dependency tree compatible with older rustc (1.70+); 0.12 pulls idna/icu requiring Rust 1.86+.
+# rustls-tls avoids a system OpenSSL dependency (native-tls requires libssl).
+reqwest = { version = "0.11.27", default-features = false, features = ["json", "multipart", "rustls-tls"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+tokio = { version = "1", features = ["fs", "macros", "rt-multi-thread"] }
+# Pin url so idna stays on 0.4 (newer url pulls ICU and requires Rust 1.86+).
+url = "=2.4.1"
