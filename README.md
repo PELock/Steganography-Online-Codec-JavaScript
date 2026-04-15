@@ -50,9 +50,10 @@ The installation package is available at https://www.npmjs.com/package/steganogr
 The installation packages have been uploaded to repositories for several popular programming languages and their source codes have been published on GitHub:
 
 | Repository   | Language | Installation | Package | GitHub |
-| ------------ | ---------| ------------ | ------- | ------ |
-| ![PyPI repository for Python](https://www.pelock.com/img/logos/repo-pypi.png) | Python | Run `pip install steganography-online-codec` | [PyPi](https://pypi.org/project/steganography-online-codec/) | [Sources](https://github.com/PELock/Steganography-Online-Codec-Python)
-| ![NPM repository for JavaScript and TypeScript](https://www.pelock.com/img/logos/repo-npm.png) | JavaScript, TypeScript | Run `npm i steganography-online-codec` or add the following to `dependencies` section of your `package.json` file `"dependencies": { "steganography-online-codec": "latest" },` | [NPM](https://www.npmjs.com/package/steganography-online-codec) | [Sources](https://github.com/PELock/Steganography-Online-Codec-JavaScript)
+| ---------- | -------- | ------------ | ------- | ------ |
+| ![PyPI repository for Python](https://www.pelock.com/img/logos/repo-pypi.png) | Python | Run `pip install steganography-online-codec` | [PyPI](https://pypi.org/project/steganography-online-codec/) | [Sources](https://github.com/PELock/Steganography-Online-Codec-Python) |
+| ![NPM repository for JavaScript and TypeScript](https://www.pelock.com/img/logos/repo-npm.png) | JavaScript, TypeScript | Run `npm i steganography-online-codec` or add `"steganography-online-codec": "latest"` under `dependencies` in `package.json` | [NPM](https://www.npmjs.com/package/steganography-online-codec) | [Sources](https://github.com/PELock/Steganography-Online-Codec-JavaScript) |
+| ![Rust crates.io](https://www.pelock.com/img/logos/repo-crates.png) | Rust | Run `cargo add steganography-online-codec` or add `steganography-online-codec = "1"` to `Cargo.toml` (optional: `git` / `path` for unreleased or vendored builds) | [crates.io](https://crates.io/crates/steganography-online-codec) | [Sources](https://github.com/PELock/Steganography-Online-Codec-Rust) |
 
 #### Alternative usage
 
